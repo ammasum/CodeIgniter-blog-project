@@ -1,0 +1,168 @@
+/*common css*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #adb5bd;
+}
+
+.container-costom{
+
+}
+.container-costom p{
+    margin: 0;
+    padding: 0;
+}
+.row-costom{
+    /*testing*/
+    /*testing*/
+    display: grid;
+    grid-template-columns: 300px 700px 300px;
+    margin: 20px auto 0 auto;
+    width: 1300px;
+}
+
+.left-box{
+    /*testing*/
+    /*testing*/
+    margin-right: 10px;
+}
+.middle-box{
+    /*testing*/
+    /*testing*/
+}
+
+.right-box{
+    /*testing*/
+    /*testing*/
+    margin-left: 10px;
+}
+
+/*end common css*/
+
+/*root route css*/
+.info-area{
+    background: black;
+    font-family: 'Poppins', sans-serif;
+}
+.post-card{
+    background: #fff;
+    box-shadow: 0 3px 3px 2px #fff;
+    border-radius: 3px;
+    padding: 5px 0;
+    margin-bottom: 20px;
+
+}
+.post-header{
+    padding: 0 10px 10px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.post-header .post-title{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.post-image{
+    width: 700px;
+    margin: 0 auto 10px auto;
+}
+.post-image img{
+    width: 100%;
+}
+
+.post-text{
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.post-opinion-bar{
+    display: grid;
+    grid-template-columns: 33.33334% 33.33334% 33.33334%;
+}
+
+.post-opinion-button{
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.post-opinion-button:hover{
+    background: rgba(181, 181, 181, 0.69);
+}
+.post-break-hr{
+    margin: 0;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+/*end root route css*/
+
+/*post create route*/
+.post-update-form{
+    background: #fff;
+    box-shadow: 0 3px 3px 2px #fff;
+    border-radius: 3px;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+.post-create-form-title{
+    font-family: Tahoma, sans-serif;
+    font-size: 30px;
+}
+.form-title-input{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-content-input{
+    width: 600px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-image: url(bg.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+/*end post create route*/
+
+/*view post*/
+.post-opinion-bar-inner{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.comment-input-area{
+    margin-bottom: 10px;
+}
+.form-area{
+    display: flex;
+}
+.form-comment-box{
+    width: 80%;
+    margin-right: 10px;
+}
+.form-comment-box-input{
+    background: darkslategrey !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.form-comment-box-input:focus{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.btn-primary-costom{
+    height: 50px;
+}
+
+.comments-show-area{
+
+}
+/*end view post*/

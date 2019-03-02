@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="57c20b77-39ba-4e7a-b97d-e2d7aa4ed88a" name="Default Changelist" comment="First init">
+      <change afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/cache/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/constants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/doctypes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/foreign_chars.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/hooks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/memcached.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/migration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/mimes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/profiler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/smileys.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/config/user_agents.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/Home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/Welcome.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/core/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/helpers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/hooks/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/language/english/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/language/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/libraries/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/logs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/Post_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/User_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/third_party/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/errors/cli/error_404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/errors/cli/error_db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/errors/cli/error_exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/errors/cli/error_general.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/errors/cli/error_php.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/errors/cli/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/errors/html/error_404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/errors/html/error_db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/errors/html/error_exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/errors/html/error_general.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/errors/html/error_php.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/errors/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/errors/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/page/home/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/page/home/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/partials/home/body/create_post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/partials/home/body/root.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/partials/home/body/view_post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/partials/home/common/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/partials/home/common/navbar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/test/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/test/test2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/welcome_message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/google-font-poppins.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/brand-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/icon/dropdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/preloader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/font-awesome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-light-300.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets_old/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets_old/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets_old/css/login-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets_old/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets_old/css/preloader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets_old/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets_old/image/brand-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets_old/image/icon/dropdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets_old/image/preloader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets_old/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets_old/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets_old/js/jquery-2.2.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Benchmark.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/CodeIgniter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Common.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Exceptions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Hooks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Input.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Loader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Log.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Output.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Router.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Security.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/URI.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/Utf8.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/compat/hash.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/compat/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/compat/mbstring.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/compat/password.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/compat/standard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/core/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB_cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB_query_builder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/DB_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/ibase/ibase_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/ibase/ibase_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/ibase/ibase_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/ibase/ibase_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/ibase/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mssql/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mssql/mssql_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mssql/mssql_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mssql/mssql_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mssql/mssql_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysql/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysql/mysql_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysql/mysql_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysql/mysql_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysql/mysql_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/oci8/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/oci8/oci8_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/oci8/oci8_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/oci8/oci8_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/oci8/oci8_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/odbc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/odbc/odbc_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/odbc/odbc_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/odbc/odbc_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/odbc/odbc_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/pdo_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/pdo_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/pdo_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/pdo_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_4d_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_4d_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_cubrid_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_cubrid_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_dblib_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_dblib_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_firebird_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_firebird_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_ibm_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_ibm_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_informix_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_informix_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_mysql_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_mysql_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_oci_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_oci_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_odbc_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_odbc_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_pgsql_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_pgsql_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_sqlite_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_sqlite_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_sqlsrv_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/pdo/subdrivers/pdo_sqlsrv_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/postgre/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/postgre/postgre_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/postgre/postgre_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/postgre/postgre_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/postgre/postgre_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite3/sqlite3_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite3/sqlite3_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite3/sqlite3_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlite3/sqlite3_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_forge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_utility.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/database/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/fonts/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/fonts/texb.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/array_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/captcha_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/cookie_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/date_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/directory_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/download_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/email_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/file_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/form_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/html_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/inflector_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/language_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/number_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/path_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/security_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/smiley_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/string_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/text_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/typography_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/url_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/helpers/xml_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/calendar_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/date_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/db_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/email_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/form_validation_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/ftp_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/imglib_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/migration_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/number_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/pagination_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/profiler_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/unit_test_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/english/upload_lang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/language/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/Cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_apc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_dummy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_file.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_memcached.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_redis.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_wincache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cache/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Calendar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Email.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Encrypt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Encryption.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Form_validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Ftp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Image_lib.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Javascript.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Javascript/Jquery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Javascript/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Migration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Parser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Profiler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Session/Session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Session/SessionHandlerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Session/Session_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Session/drivers/Session_database_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Session/drivers/Session_files_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Session/drivers/Session_memcached_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Session/drivers/Session_redis_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Session/drivers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Session/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Trackback.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Typography.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Unit_test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Upload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/User_agent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Xmlrpc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Xmlrpcs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/Zip.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/libraries/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/52520476_2180435952003704_4070572447538085888_o.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/IMG_20190222_230213.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/IMG_20190222_2302131.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/IMG_20190222_2302132.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/IMG_20190222_2302133.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/IMG_20190222_2302134.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/IMG_20190222_2302135.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/up.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/up1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/up2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/up3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/up4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/up5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/.buildinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/DCO.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_downloads/ELDocs.tmbundle.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_images/appflowchart.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_images/smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/basic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/ci-icon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/comment-bright.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/comment-close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/comment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/css/badge_only.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/css/citheme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/css/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/doctools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/down-pressed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/file.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/images/ci-icon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/jquery-3.1.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/js/oldtheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/js/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/pygments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/searchtools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/underscore-1.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/underscore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/up-pressed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/_static/websupport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/changelog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/contributing/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/caching.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/call_function.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/configuration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/connecting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/db_driver_reference.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/examples.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/forge.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/helpers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/metadata.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/queries.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/query_builder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/transactions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/database/utilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/documentation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/alternative_php.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/ancillary_classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/autoloader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/caching.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/cli.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/common_functions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/compatibility_functions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/controllers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/core_classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/creating_drivers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/creating_libraries.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/credits.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/drivers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/environments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/errors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/helpers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/hooks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/libraries.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/managing_apps.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/models.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/profiling.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/requirements.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/reserved_names.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/routing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/security.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/styleguide.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/urls.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/views.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/general/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/genindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/array_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/captcha_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/cookie_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/date_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/directory_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/download_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/email_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/file_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/form_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/html_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/inflector_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/language_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/number_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/path_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/security_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/smiley_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/string_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/text_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/typography_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/url_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/helpers/xml_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/downloads.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/troubleshooting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_120.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_130.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_131.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_132.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_133.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_140.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_141.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_150.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_152.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_153.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_154.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_160.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_161.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_162.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_163.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_170.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_171.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_172.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_200.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_201.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_202.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_203.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_210.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_211.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_212.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_213.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_214.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_220.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_221.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_222.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_223.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_300.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_301.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_302.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_303.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_304.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_305.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_306.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_310.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_311.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_3110.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_312.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_313.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_314.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_315.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_316.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_317.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_318.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_319.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrade_b11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/installation/upgrading.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/benchmark.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/caching.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/calendar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/config.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/encrypt.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/encryption.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/file_uploading.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/form_validation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/ftp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/image_lib.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/javascript.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/language.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/loader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/migration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/pagination.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/parser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/security.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/sessions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/trackback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/typography.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/unit_testing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/uri.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/user_agent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/xmlrpc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/libraries/zip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/license.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/objects.inv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/overview/appflow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/overview/at_a_glance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/overview/features.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/overview/getting_started.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/overview/goals.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/overview/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/overview/mvc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/searchindex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/tutorial/conclusion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/tutorial/create_news_items.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/tutorial/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/tutorial/news_section.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_guide/tutorial/static_pages.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-2" />
+    <option name="width" value="1924" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57c20b77-39ba-4e7a-b97d-e2d7aa4ed88a" name="Default Changelist" comment="" />
+      <created>1551556293255</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551556293255</updated>
+      <workItem from="1551556295721" duration="562000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="562000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-2" y="0" width="1924" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24813233" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First init" />
+    <option name="LAST_COMMIT_MESSAGE" value="First init" />
+  </component>
+</project>
