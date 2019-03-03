@@ -2,7 +2,11 @@
 
 class User extends CI_Controller{
     public function index(){
-        $this->load->view('page/home/login');
+        if($this->session->userdata('islogin')){
+            redirect('home');
+        }else{
+            $this->load->view('page/home/login');
+        }
     }
 
     public function registration(){

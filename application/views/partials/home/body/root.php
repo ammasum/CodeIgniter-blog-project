@@ -19,8 +19,10 @@
         </div>
         <div class="post-text">
         <p>
-            <?php echo $row->content; ?>
-            <a class="btn btn-primary" href="<?php echo base_url() ?>index.php/post/view/<?php echo $row->id; ?>" role="button">Read more..</a>
+            <?php echo substr($row->content, 0, 149);?>
+            <?php if(strlen($row->content) >= 150){ ?>
+                ...<a class="btn btn-primary" href="<?php echo base_url() ?>index.php/post/view/<?php echo $row->id; ?>" role="button">Read more</a>
+            <?php } ?>
         </p>
         </div>
         <?php if($this->session->userdata('islogin')){ ?>
