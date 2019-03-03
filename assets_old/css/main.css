@@ -166,3 +166,14 @@ body{
 
 }
 /*end view post*/
+
+/*errors route*/
+.errors{
+    background: rgba(0, 0, 0, 0.27);
+    font-family: 'Cormorant Garamond', serif;
+}
+.error-header{
+    font-size: 30px;
+    font-weight: bold;
+}
+/*end errors route*/

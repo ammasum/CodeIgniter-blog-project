@@ -20,6 +20,8 @@
                     $this->load->view('partials/home/body/create_post');
                 }else if($page_body === 'view_post'){
                     $this->load->view('partials/home/body/view_post');
+                }else if($page_body === 'errors'){
+                    $this->load->view('partials/home/body/errors');
                 }
             ?>
         </div>

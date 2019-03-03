@@ -21,8 +21,11 @@ class Post extends CI_Controller{
                     $this->load->library('upload', $config);
 
                     if ( ! $this->upload->do_upload('image')) {
-                        $error = array('error' => $this->upload->display_errors());
-                        echo "Error";
+                        $error = array(
+                            'error' => $this->upload->display_errors(),
+                            'page_body' => 'errors'
+                        );
+                        $this->load->view('page/home/index', $error);
                     }
                     else
                     {
@@ -33,7 +36,11 @@ class Post extends CI_Controller{
 
                     }
                 }else{
-                    echo "Problem with form Data";
+                    $data = array(
+                        'error' => '<p>Data is invalid. Make sure data is fill up</p>',
+                        'page_body' => 'errors'
+                    );
+                    $this->load->view('page/home/index', $data);
                 }
             }
         }else{
@@ -49,7 +56,11 @@ class Post extends CI_Controller{
             $data['post_id'] = $post_id;
             $this->load->view('page/home/index', $data);
         }else{
-            echo "Something went wronge";
+            $data = array(
+                'error' => '<p>Data is invalid. Make sure data is fill up</p>',
+                'page_body' => 'errors'
+            );
+            $this->load->view('page/home/index', $data);
         }
     }
 
@@ -62,10 +73,18 @@ class Post extends CI_Controller{
                     redirect('post/view/' . $post_id);
                 }
             }else{
-                echo "Reqest method error";
+                $data = array(
+                    'error' => '<p>Request method error</p>',
+                    'page_body' => 'errors'
+                );
+                $this->load->view('page/home/index', $data);
             }
         }else{
-            echo "Post id not mentioned";
+            $data = array(
+                'error' => '<p>No post id define</p>',
+                'page_body' => 'errors'
+            );
+            $this->load->view('page/home/index', $data);
         }
     }
 
