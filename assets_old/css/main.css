@@ -177,3 +177,21 @@ body{
     font-weight: bold;
 }
 /*end errors route*/
+
+/*left side*/
+.categories{
+    background: #fff;
+    box-shadow: 0 3px 3px 2px #fff;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.categories-header{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.sub-category-list{
+    margin-left: 15px;
+}
+/*end left side*/

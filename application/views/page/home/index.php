@@ -11,7 +11,9 @@
 <!--end navbar-->
 <div class="container-costom">
     <div class="row-costom">
-        <div class="left-box">H</div>
+        <div class="left-box">
+            <?php $this->load->view('partials/home/common/categoriesbar'); ?>
+        </div>
         <div class="middle-box">
             <?php
                 if($page_body === "root"){

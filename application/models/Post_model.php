@@ -4,7 +4,8 @@ class Post_model extends CI_Model{
     public function insert($file){
         $data['cat_id'] = 1;
         $data['title'] = $this->input->post('title');
-        $data['author'] = $this->session->userdata('username');
+        $data['author_id'] = $this->session->userdata('username');
+        $data['author_name'] = $this->session->userdata('fullname');
         $data['image'] = $file['file_name'];
         $data['content'] = $this->input->post('content');
         $this->db->insert('posts', $data);
@@ -23,6 +24,7 @@ class Post_model extends CI_Model{
     public function insert_comment($post_id){
         $data = array(
             'author_id' => $this->session->userdata('userid'),
+            'author_name' => $this->session->userdata('fullname'),
             'post_id' => $post_id,
             'comment' => $this->input->post('comment')
         );

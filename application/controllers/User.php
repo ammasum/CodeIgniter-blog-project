@@ -21,6 +21,7 @@ class User extends CI_Controller{
                     $data = array(
                         'userid' => $res[0],
                         'username' => $res[1],
+                        'fullname' => $res[2],
                         'islogin' => true
                     );
                     $this->session->set_userdata($data);
