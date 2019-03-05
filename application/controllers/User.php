@@ -40,6 +40,7 @@ class User extends CI_Controller{
 
     public function login(){
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $this->form_validation->set_rules('username', 'Usename', 'trim|required|min_length[2]');
             $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[2]');
             if($this->form_validation->run()){
                 $res = $this->user_model->get_user();
@@ -48,6 +49,7 @@ class User extends CI_Controller{
                     $data = array(
                         'userid' => $user[0]->id,
                         'username' => $user[0]->username,
+                        'fullname' => $user[0]->fullname,
                         'islogin' => true
                     );
                     $this->session->set_userdata($data);
@@ -68,6 +70,7 @@ class User extends CI_Controller{
         if($_SERVER['REQUEST_METHOD'] === 'GET'){
             $this->session->unset_userdata('userid');
             $this->session->unset_userdata('username');
+            $this->session->unset_userdata('fullname');
             $this->session->unset_userdata('islogin');
             redirect('home');
         }else{
