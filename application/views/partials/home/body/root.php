@@ -12,7 +12,7 @@
     <div class="post-card">
         <div class="post-header">
             <p class="post-title"><?php echo $row->title; ?></p>
-            <p class="author">By <a href="#"><?php echo $row->author; ?></a></p>
+            <p class="author">By <a href="#"><?php echo $row->author_name; ?></a></p>
         </div>
         <div class="post-image">
             <img src="<?php echo base_url() ?>uploads/image/<?php echo $row->image; ?>">

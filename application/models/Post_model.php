@@ -2,8 +2,9 @@
 
 class Post_model extends CI_Model{
     public function insert($file){
-        $data['cat_id'] = 1;
         $data['title'] = $this->input->post('title');
+        $data['cat_id'] = $this->input->post('cat');
+        $data['sub_cat_id'] = $this->input->post('subCat');
         $data['author_id'] = $this->session->userdata('username');
         $data['author_name'] = $this->session->userdata('fullname');
         $data['image'] = $file['file_name'];

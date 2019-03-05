@@ -15,13 +15,11 @@
                     <?php array_push($catIds, $cat_row->id); ?>
                     <option value="<?php echo $cat_row->id; ?>"><?php echo $cat_row->name; ?></option>
                 <?php } ?>
-                <option value="2">E-Commerce</option>
             </select>
         </div>
         <div class="form-group">
             <label for="subCat">Sub Category</label>
-            <select class="form-control" name="subCat" id="subCat">
-                <option ng-repeat="x in subCat" ng-value="x.value">{{ x.name }}</option>
+            <select class="form-control" name="subCat" id="subCat" ng-bind-html="subCat">
             </select>
         </div>
         <div class="form-group">
@@ -37,53 +35,28 @@
 </div>
 
 <script>
-    var subCatList = [
-        <?php foreach ($catIds as $carId){ ?>
-        [
-            <?php $sub_categories = $this->categories_model->get_sub_categories($cat_row->id); ?>
-            <?php foreach ($sub_categories as $subcat_row){ ?>
-            {
-                name: <?php echo $subcat_row->name; ?>,
-                value: <?php echo $subcat_row->id; ?>
-            }
-            <?php } ?>
-        ]
-        <?php } ?>
-        [
-            {
-                name: "Select one"
-            }
-        ],
-        [
-            {
-                name: "Nodejs",
-                value: "1"
-            },
-            {
-                name: "PHP",
-                value: "2"
-            }
-        ],
-        [
-            {
-                name: "Ebay",
-                value: "1"
-            },
-            {
-                name: "Amazon",
-                value: "2"
-            }
-        ]
-    ];
-
     const myApp = angular.module('myApp', ['ngMessages','ngResource']);
 
-    myApp.controller('postController', ($scope,$filter)=>{
+    myApp.controller('postController', ($scope,$filter,$http,$sce)=>{
         $scope.category = 0;
-        $scope.subCat = [];
-        $scope.$watch('category', ()=>{
-            $scope.subCat = [...subCatList[parseInt($scope.category)]]
+        $scope.subCat = "<option>Select One</option>";
+        $scope.subCat = $sce.trustAsHtml($scope.subCat);
+        $scope.$watch('category',()=>{
+            if(parseInt($scope.category) !== 0){
+                $http({
+                    method: 'GET',
+                    url: '<?php echo base_url(); ?>index.php/post/get_sub_cat/' + $scope.category
+                }).then((response) => {
+                    // console.log(response);
+                    $scope.subCat = response.data;
+                    $scope.subCat = $sce.trustAsHtml($scope.subCat);
+                }, (err) => {
+                    if(err){
+                        throw err;
+                    }
+                });
+            }
         });
     });
-
+    console.log("Changed");
 </script>

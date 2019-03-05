@@ -11,6 +11,8 @@ class Post extends CI_Controller{
             }else if($_SERVER['REQUEST_METHOD'] === 'POST'){
                 $this->form_validation->set_rules('title', 'Title', 'required|min_length[3]');
                 $this->form_validation->set_rules('content', 'Content', 'required|min_length[3]');
+                $this->form_validation->set_rules('cat', 'Category', 'trim|required');
+                $this->form_validation->set_rules('subCat', 'Sub-Category', 'trim');
                 if($this->form_validation->run()){
                     $config['upload_path'] = './uploads/image';
                     $config['allowed_types'] = 'gif|jpg|png';
@@ -26,9 +28,7 @@ class Post extends CI_Controller{
                             'page_body' => 'errors'
                         );
                         $this->load->view('page/home/index', $error);
-                    }
-                    else
-                    {
+                    } else {
                         $file = $this->upload->data();
                         $this->post_model->insert($file);
                         $this->session->set_flashdata(array("create_success" => "<p class='text-success'>Post create success</p>"));
@@ -88,4 +88,9 @@ class Post extends CI_Controller{
         }
     }
 
+
+    public function get_sub_cat($cat_id){
+        $result['data'] = $this->categories_model->get_sub_categories($cat_id);
+        $this->load->view('partials/home/single/sub_cat_view', $result);
+    }
 }
