@@ -1,6 +1,7 @@
 <div class="post-update-form" ng-controller="postController">
     <p class="post-create-form-title">Create Post</p>
     <?php
+        $catIds = array();
         echo form_open_multipart('post/create');
     ?>
         <div class="form-group">
@@ -9,7 +10,11 @@
         <div class="form-group">
             <label for="category">Category</label>
             <select class="form-control" name="cat" ng-model="category" id="category">
-                <option value="1">Development</option>
+                <?php $main_categories = $this->categories_model->get_main_categories(); ?>
+                <?php foreach ($main_categories as $cat_row){ ?>
+                    <?php array_push($catIds, $cat_row->id); ?>
+                    <option value="<?php echo $cat_row->id; ?>"><?php echo $cat_row->name; ?></option>
+                <?php } ?>
                 <option value="2">E-Commerce</option>
             </select>
         </div>
@@ -33,6 +38,17 @@
 
 <script>
     var subCatList = [
+        <?php foreach ($catIds as $carId){ ?>
+        [
+            <?php $sub_categories = $this->categories_model->get_sub_categories($cat_row->id); ?>
+            <?php foreach ($sub_categories as $subcat_row){ ?>
+            {
+                name: <?php echo $subcat_row->name; ?>,
+                value: <?php echo $subcat_row->id; ?>
+            }
+            <?php } ?>
+        ]
+        <?php } ?>
         [
             {
                 name: "Select one"
