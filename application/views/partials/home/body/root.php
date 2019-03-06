@@ -28,7 +28,11 @@
         <?php if($this->session->userdata('islogin')){ ?>
             <div class="post-opinion-bar">
                 <div class="post-opinion-like"><a href="#" class="post-opinion-button"><i class="fal fa-thumbs-up"></i></a></div>
-                <div class="post-opinion-comment"><a href="#" class="post-opinion-button"><i class="fal fa-comment-plus"></i></a></div>
+                <div class="post-opinion-comment">
+                    <a href="<?php echo base_url(); ?>index.php/post/view/<?php echo $row->id; ?>" class="post-opinion-button">
+                        <i class="fal fa-comment-plus"></i>
+                    </a>
+                </div>
                 <div class="post-opinion-share"><a href="#" class="post-opinion-button"><i class="fal fa-share-alt-square"></i></a></div>
             </div>
         <?php } ?>
