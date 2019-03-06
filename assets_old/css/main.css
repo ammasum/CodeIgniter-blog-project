@@ -33,6 +33,7 @@ body{
 .middle-box{
     /*testing*/
     /*testing*/
+    margin-bottom: 10px;
 }
 
 .right-box{
@@ -195,3 +196,14 @@ body{
     margin-left: 15px;
 }
 /*end left side*/
+
+/*footer*/
+.footer .view-all{
+    width: max-content;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 1px 1px 1px #fff;
+    border-radius: 3px;
+    padding: 10px;
+}
+/*end footer*/

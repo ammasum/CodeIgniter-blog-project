@@ -39,3 +39,9 @@
     </div>
 <?php } ?>
 <!--end post-->
+
+<footer class="footer">
+    <div class="view-all">
+        <p><a href="<?php echo base_url(); ?>index.php/post/all_post">View all post</a></p>
+    </div>
+</footer>

@@ -88,6 +88,10 @@ class Post extends CI_Controller{
         }
     }
 
+    public function all_post($page = 0){
+
+    }
+
 
     public function get_sub_cat($cat_id){
         $result['data'] = $this->categories_model->get_sub_categories($cat_id);
