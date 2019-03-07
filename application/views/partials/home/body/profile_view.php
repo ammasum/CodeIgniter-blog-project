@@ -1,3 +1,5 @@
+
+
 <div class="profile-page-view-1010">
     <div class="profile-top-1010">
         <div class="profile-top-content-1010">
@@ -5,7 +7,7 @@
                 <img src="<?php echo base_url(); ?>uploads/image/c++.jpg" alt="">
             </div>
             <div class="profile-top-title-1010">
-                <p class="profile-top-title-name-1010">AM</p><br>
+                <p class="profile-top-title-name-1010"><?php echo $result->fullname; ?></p><br>
             </div>
         </div>
     </div>
@@ -13,14 +15,20 @@
 
 <!-- post -->
 
-<?php $results = $this->post_model->get_all_by_author_id();?>
+<?php $results = $this->post_model->get_all_by_author_id($result->id);?>
 <?php foreach ($results as $row){ ?>
     <div class="post-card">
         <div class="post-header">
             <p class="post-title"><?php echo $row->title; ?></p>
             <p class="author">
                 By <a href="<?php echo base_url(); ?>index.php/user/profile/<?php echo $row->author_id; ?>">
-                    <?php echo $row->author_name; ?>
+                    <?php
+                        if((int)$this->session->userdata('userid') === (int)$row->author_id){
+                            echo "You";
+                        }else{
+                            echo $row->author_name;
+                        }
+                    ?>
                 </a>
             </p>
         </div>

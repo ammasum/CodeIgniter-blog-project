@@ -5,7 +5,7 @@ class Post_model extends CI_Model{
         $data['title'] = $this->input->post('title');
         $data['cat_id'] = $this->input->post('cat');
         $data['sub_cat_id'] = $this->input->post('subCat');
-        $data['author_id'] = $this->session->userdata('username');
+        $data['author_id'] = $this->session->userdata('userid');
         $data['author_name'] = $this->session->userdata('fullname');
         $data['image'] = $file['file_name'];
         $data['content'] = $this->input->post('content');

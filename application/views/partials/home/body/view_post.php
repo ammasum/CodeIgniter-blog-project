@@ -6,7 +6,13 @@
             <p class="post-title"><?php echo $row->title; ?></p>
             <p class="author">
                 By <a href="<?php echo base_url(); ?>index.php/user/profile/<?php echo $row->author_id; ?>">
-                    <?php echo $row->author_name; ?>
+                    <?php
+                        if((int)$this->session->userdata('userid') === (int)$row->author_id){
+                            echo "You";
+                        }else{
+                            echo $row->author_name;
+                        }
+                    ?>
                 </a>
             </p>
         </div>
