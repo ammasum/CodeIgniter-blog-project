@@ -55,21 +55,21 @@ INSERT INTO subCategories(name, parent_id) VALUES('Amazon', 2);
 -- Test data posts
 INSERT INTO posts(cat_id, sub_cat_id, title, author_id, author_name, image, content)
 VALUES(
-2, 1,
+2, 3,
 'Amazon',
 1, 'AM', 'amazon.png',
 'The Amazon is a biggest market in the world. There are so many product buy or sell everyday. So many people are working here to make amazon better'
 );
 INSERT INTO posts(cat_id, sub_cat_id, title, author_id, author_name, image, content)
 VALUES(
-2, 1,
+2, 3,
 'Amazon 2',
 1, 'AM', 'amazon.png',
 'The Amazon is a biggest market in the world. There are so many product buy or sell everyday. So many people are working here to make amazon better'
 );
 INSERT INTO posts(cat_id, sub_cat_id, title, author_id, author_name, image, content)
 VALUES(
-2, 1,
+2, 3,
 'Amazon 2',
 1, 'AM', 'amazon.png',
 'The Amazon is a biggest market in the world. There are so many product buy or sell everyday. So many people are working here to make amazon better'
