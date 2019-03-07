@@ -1,13 +1,19 @@
-<?php if($this->session->flashdata('create_success')){ ?>
-    <div class="info-area">
-        <?php echo $this->session->flashdata('create_success'); ?>
+<div class="profile-page-view-1010">
+    <div class="profile-top-1010">
+        <div class="profile-top-content-1010">
+            <div class="profile-top-image-1010">
+                <img src="<?php echo base_url(); ?>uploads/image/c++.jpg" alt="">
+            </div>
+            <div class="profile-top-title-1010">
+                <p class="profile-top-title-name-1010">AM</p><br>
+            </div>
+        </div>
     </div>
-<?php } ?>
-
+</div>
 
 <!-- post -->
 
-<?php $results = $this->post_model->get_all();?>
+<?php $results = $this->post_model->get_all_by_author_id();?>
 <?php foreach ($results as $row){ ?>
     <div class="post-card">
         <div class="post-header">
@@ -22,12 +28,12 @@
             <img src="<?php echo base_url() ?>uploads/image/<?php echo $row->image; ?>">
         </div>
         <div class="post-text">
-        <p>
-            <?php echo substr($row->content, 0, 149);?>
-            <?php if(strlen($row->content) >= 150){ ?>
-                ...<a class="btn btn-primary" href="<?php echo base_url() ?>index.php/post/view/<?php echo $row->id; ?>" role="button">Read more</a>
-            <?php } ?>
-        </p>
+            <p>
+                <?php echo substr($row->content, 0, 149);?>
+                <?php if(strlen($row->content) >= 150){ ?>
+                    ...<a class="btn btn-primary" href="<?php echo base_url() ?>index.php/post/view/<?php echo $row->id; ?>" role="button">Read more</a>
+                <?php } ?>
+            </p>
         </div>
         <?php if($this->session->userdata('islogin')){ ?>
             <div class="post-opinion-bar">
@@ -43,9 +49,3 @@
     </div>
 <?php } ?>
 <!--end post-->
-
-<footer class="footer">
-    <div class="view-all">
-        <p><a href="<?php echo base_url(); ?>index.php/post/all_post">View all post</a></p>
-    </div>
-</footer>

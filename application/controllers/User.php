@@ -37,6 +37,12 @@ class User extends CI_Controller{
         }
     }
 
+    public function profile($user_id){
+        $result = $this->user_model->get_user_by_id($user_id);
+        $data['page_body'] = 'profile_view';
+        $data['result'] = $result;
+        $this->load->view('page/home/index', $data);
+    }
 
     public function login(){
         if($_SERVER['REQUEST_METHOD'] === 'POST'){

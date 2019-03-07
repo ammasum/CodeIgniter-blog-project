@@ -16,6 +16,12 @@ class Post_model extends CI_Model{
          return $result->result();
     }
 
+    public function get_all_by_author_id($author_id){
+        $this->db->where('author_id', $author_id);
+        $result = $this->db->get('posts');
+        return $result->result();
+    }
+
     public function get_one($post_id){
         $this->db->where('id', $post_id);
         $res = $this->db->get('posts');
