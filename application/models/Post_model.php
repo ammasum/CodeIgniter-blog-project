@@ -21,6 +21,16 @@ class Post_model extends CI_Model{
         $res = $this->db->get('posts');
         return $res;
     }
+    public function get_post_by_page($cat, $subCat, $page){
+        if($cat !== 0){
+            $this->db->where('cat_id', $cat);
+            if($subCat !== 0){
+                $this->db->where('sub_cat_id', $subCat);
+            }
+        }
+        $results = $this->db->get('posts', 3, (int)$page * 3);
+        return $results->result();
+    }
 
     public function insert_comment($post_id){
         $data = array(

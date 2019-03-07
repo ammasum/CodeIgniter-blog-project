@@ -207,3 +207,36 @@ body{
     padding: 10px;
 }
 /*end footer*/
+
+/*view all post*/
+.view-all-post-1100{
+    background: #fff;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 49% 49%;
+    margin: 0 auto 0 auto;
+    box-shadow: 0 3px 3px 2px #fff;
+    border-radius: 3px;
+    padding: 1%;
+    margin-bottom: 20px;
+    color: white;
+}
+.post-box-1100{
+    padding: 5px;
+    border-radius: 10px;
+    background: #616161;
+}
+.post-title-1100{
+    margin-bottom: 10px;
+}
+.post-image-1100{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+/*end view all post*/
+
+.disabled-default{
+    text-decoration: none;
+    color: white;
+}
