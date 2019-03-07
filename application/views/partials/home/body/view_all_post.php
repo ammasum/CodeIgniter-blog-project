@@ -19,6 +19,6 @@
         <?php } ?>
     </div>
     <?php if(count($result) > 0){ ?>
-        <div class="post-next-1100"><i class="fas fa-arrow-square-right"></i></div>
+        <div class="post-next-1100"><a href="?page=<?php echo $next_page; ?>"><i class="fas fa-arrow-square-right"></i></a></div>
     <?php } ?>
 </div>

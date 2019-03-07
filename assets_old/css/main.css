@@ -209,17 +209,19 @@ body{
 /*end footer*/
 
 /*view all post*/
-.view-all-post-1100{
+.page-1100{
     background: #fff;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 49% 49%;
-    margin: 0 auto 0 auto;
     box-shadow: 0 3px 3px 2px #fff;
     border-radius: 3px;
     padding: 1%;
     margin-bottom: 20px;
     color: white;
+}
+.view-all-post-1100{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 49% 49%;
+    margin: 0 auto 0 auto;
 }
 .post-box-1100{
     padding: 5px;
@@ -233,6 +235,12 @@ body{
     width: 95%;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+.post-next-1100{
+    width: max-content;
+    margin: 0 auto;
+    color: black;
+    font-size: 30px;
 }
 /*end view all post*/
 

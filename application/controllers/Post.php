@@ -90,12 +90,13 @@ class Post extends CI_Controller{
 
     public function all_post($cat = 0, $subCat = 0){
         if($this->input->get('page')){
-            $page = $this->input->get('page');
+            $page = (int)$this->input->get('page');
         }else{
             $page = 0;
         }
         $data['result'] = $this->post_model->get_post_by_page($cat, $subCat, $page);
         $data['page_body'] = "view_aLl_post";
+        $data['next_page'] = $page + 1;
         $this->load->view('page/home/index.php', $data);
     }
 
