@@ -12,8 +12,8 @@ class Post_model extends CI_Model{
         $this->db->insert('posts', $data);
     }
     public function get_all(){
-         $result = $this->db->get('posts')->result();
-         return $result;
+         $result = $this->db->get('posts', 6);
+         return $result->result();
     }
 
     public function get_one($post_id){
@@ -28,7 +28,7 @@ class Post_model extends CI_Model{
                 $this->db->where('sub_cat_id', $subCat);
             }
         }
-        $results = $this->db->get('posts', 3, (int)$page * 3);
+        $results = $this->db->get('posts', 8, (int)$page * 8);
         return $results->result();
     }
 
