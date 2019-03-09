@@ -7,24 +7,22 @@ CREATE TABLE categories (
 CREATE TABLE subCategories (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(100) NOT NULL,
-  parent_id INT UNSIGNED NOT NULL
+  FOREIGN KEY(parent_id) REFERENCES categories(id)
 );
 
 CREATE TABLE comments (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  post_id INT UNSIGNED NOT NULL,
-  author_id INT UNSIGNED NOT NULL,
-  author_name INT UNSIGNED NOT NULL,
+  FOREIGN KEY (post_id) REFERENCES posts(id),
+  FOREIGN KEY (author_id) REFERENCES users(id),
   comment VARCHAR(500) NOT NULL
 );
 
 CREATE TABLE posts (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  cat_id INT UNSIGNED NOT NULL,
-  sub_cat_id INT UNSIGNED,
+  FOREIGN KEY(cat_id) REFERENCES categories(id),
+  FOREIGN KEY(sub_cat_id) REFERENCES subCategories(id),
+  FOREIGN KEY(author_id) REFERENCES users(id),
   title VARCHAR(100) NOT NULL,
-  author_id INT UNSIGNED NOT NULL,
-  author_name VARCHAR(100) NOT NULL,
   image VARCHAR(100),
   content VARCHAR(1000) NOT NULL
 );
