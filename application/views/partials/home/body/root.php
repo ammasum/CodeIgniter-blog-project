@@ -7,7 +7,6 @@
 
 <!-- post -->
 
-<?php $results = $this->post_model->get_all();?>
 <?php foreach ($results as $row){ ?>
     <div class="post-card">
         <div class="post-header">

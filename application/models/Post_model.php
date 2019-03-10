@@ -6,14 +6,15 @@ class Post_model extends CI_Model{
         $data['cat_id'] = $this->input->post('cat');
         $data['sub_cat_id'] = $this->input->post('subCat');
         $data['author_id'] = $this->session->userdata('userid');
-        $data['author_name'] = $this->session->userdata('fullname');
         $data['image'] = $file['file_name'];
         $data['content'] = $this->input->post('content');
         $this->db->insert('posts', $data);
     }
     public function get_all(){
-         $result = $this->db->get('posts', 6);
-         return $result->result();
+        $this->db->select('posts.*, users.fullname AS author_name');
+        $this->db->join('users', 'posts.author_id = users.id');
+        $result = $this->db->get('posts', 6);
+        return $result->result();
     }
 
     public function get_all_by_author_id($author_id){
@@ -23,7 +24,9 @@ class Post_model extends CI_Model{
     }
 
     public function get_one($post_id){
-        $this->db->where('id', $post_id);
+        $this->db->select('posts.*, users.fullname AS author_name');
+        $this->db->where('posts.id', $post_id);
+        $this->db->join('users', 'posts.author_id = users.id');
         $res = $this->db->get('posts');
         return $res;
     }
