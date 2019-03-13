@@ -1,7 +1,21 @@
-.form-control{
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-.msg-input-box{
-    width: 50%;
+.common-message{
+    width: max-content;
+    color: white;
+    border-radius: 7%;
+}
+.owner-parent{
+    overflow: hidden;
+}
+.own-message{
+    clear: right;
+    float: right;
+}
+.common-message p{
+    font-size: 20px;
+    margin: 1px 10px;
 }

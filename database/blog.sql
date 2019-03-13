@@ -49,19 +49,21 @@ CREATE TABLE conversations(
 );
 
 CREATE TABLE conversation_group(
-  conversatioin_id INT UNSIGNED,
+  conversation_id INT UNSIGNED,
   text_sender INT UNSIGNED,
   text_receiver INT UNSIGNED,
-  FOREIGN KEY (conversatioin_id) REFERENCES conversations(id),
+  FOREIGN KEY (conversation_id) REFERENCES conversations(id),
   FOREIGN KEY (text_sender) REFERENCES users(id),
   FOREIGN KEY (text_receiver) REFERENCES users(id)
 );
 
 CREATE TABLE conversation_content(
-  conversatioin_id INT UNSIGNED,
+  conversation_id INT UNSIGNED,
   text TEXT,
+  sender INT UNSIGNED,
   time INT,
-  FOREIGN KEY (conversatioin_id) REFERENCES conversations(id)
+  FOREIGN KEY (conversation_id) REFERENCES conversations(id),
+  FOREIGN KEY (sender) REFERENCES users(id)
 );
 
 
@@ -90,3 +92,14 @@ INSERT INTO `subCategories` (`name`, `parent_id`) VALUES
 INSERT INTO `posts` (`cat_id`, `sub_cat_id`, `author_id`, `title`, `image`, `content`) VALUES
 (1, 1, 1, 'C++ 1', 'image-3.jpg', 'C++  is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.\r\n\r\nIt was designed with a bias toward system programming and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights.[7] C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications,[7] including desktop applications, servers (e.g. e-commerce, Web search or SQL servers), and performance-critical applications (e.g. telephone switches or space probes).[8] C++ is a compiled language, with implementations of it available on many platforms. Many vendors provide C++ compilers, including the Free Software Foundation, Microsoft, Intel, and IBM.\r\n\r\nC++ is standardized by the International Organization for Standardization (ISO), with the latest standard version rati'),
 (1, 2, 2, 'Javascript 1', 'image-4.png', 'JavaScript, often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a programming language that is characterized as dynamic, weakly typed, prototype-based and multi-paradigm');
+
+
+-- Dommy Data conversation
+INSERT INTO conversations(type) VALUES (1),(1);
+
+-- Dommy Data conversation_group
+INSERT INTO conversation_group(conversation_id, text_sender, text_receiver) VALUES
+(1, 1, 2),
+(1, 2, 1),
+(2, 2, 3),
+(2, 3, 2);

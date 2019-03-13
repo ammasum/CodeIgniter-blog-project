@@ -14,10 +14,10 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
                 <?php if($page_body === "message_list"){ ?>
-                    <?php $results = $this->message_model->get_message_list($this->session->userdata('userid')) ?>
+                    <?php $results = $this->message_model->get_message_list_by_user_id($this->session->userdata('userid')) ?>
                     <h1>Messages</h1>
                     <ul class="list-group">
                         <?php foreach ($results AS $result){ ?>
@@ -30,7 +30,26 @@
                     </ul>
                 <?php }else if($page_body === "message_box"){ ?>
                     <div class="message-show-area">
-                        .
+                        <div class="owner-parent">
+                            <div class="own-message bg-primary common-message">
+                                <p>Hi</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="receive-message bg-danger common-message">
+                                <p>Hi</p>
+                            </div>
+                        </div>
+                        <div class="owner-parent">
+                            <div class="own-message bg-primary common-message">
+                                <p>how are you</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="receive-message bg-danger common-message">
+                                <p>fine</p>
+                            </div>
+                        </div>
                     </div>
                     <?php echo form_open('message/to/' . $msg_id); ?>
                     <div class="form-group">
@@ -40,8 +59,9 @@
                     <?php echo form_close(); ?>
                 <?php } ?>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-3"></div>
         </div>
     </div>
+    <a href="#" class="btn btn-primary">HI hello why</a>
 </body>
 </html>
