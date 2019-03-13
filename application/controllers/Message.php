@@ -18,10 +18,10 @@ class Message extends CI_Controller{
             count($this->user_model->get_user_by_id($id)) === 1
             && $id != $this->session->userdata('userid')
         ){
+            $result = $this->message_model->get_message_group_by_sender_and_receiver_id($id);
             if($_SERVER['REQUEST_METHOD'] === "POST"){
                 $this->form_validation->set_rules('usermsg', "User Message", "trim|required|min_length[1]");
                 if($this->form_validation->run()){
-                    $result = $this->message_model->get_message_group_by_sender_and_receiver_id($id);
                     if(count($result) > 0){
                         $this->message_model->insert_message($result[0]->conversation_id);
                     }else{
@@ -33,6 +33,7 @@ class Message extends CI_Controller{
             }
             $data['page_body'] = "message_box";
             $data['msg_id'] = $id;
+            $data['msg'] = $this->message_model->get_message_content($result[0]->conversation_id);
             $this->load->view('page/home/message', $data);
         }else{
             echo "User id error";

@@ -30,26 +30,23 @@
                     </ul>
                 <?php }else if($page_body === "message_box"){ ?>
                     <div class="message-show-area">
-                        <div class="owner-parent">
-                            <div class="own-message bg-primary common-message">
-                                <p>Hi</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="receive-message bg-danger common-message">
-                                <p>Hi</p>
-                            </div>
-                        </div>
-                        <div class="owner-parent">
-                            <div class="own-message bg-primary common-message">
-                                <p>how are you</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="receive-message bg-danger common-message">
-                                <p>fine</p>
-                            </div>
-                        </div>
+                        <?php if(count($msg) >0){ ?>
+                            <?php foreach ($msg as $msgrow){ ?>
+                                <?php if((int)$msgrow->sender === (int)$this->session->userdata('userid')){ ?>
+                                    <div class="owner-parent">
+                                        <div class="own-message bg-primary common-message">
+                                            <p><?php echo $msgrow->text; ?></p>
+                                        </div>
+                                    </div>
+                                <?php }else{ ?>
+                                    <div>
+                                        <div class="receive-message bg-danger common-message">
+                                            <p><?php echo $msgrow->text; ?></p>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            <?php } ?>
+                        <?php } ?>
                     </div>
                     <?php echo form_open('message/to/' . $msg_id); ?>
                     <div class="form-group">
@@ -62,6 +59,5 @@
             <div class="col-md-3"></div>
         </div>
     </div>
-    <a href="#" class="btn btn-primary">HI hello why</a>
 </body>
 </html>
