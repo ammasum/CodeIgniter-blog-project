@@ -68,24 +68,25 @@ CREATE TABLE conversation_content(
 
 
 -- Dommy Data user
-INSERT INTO `users` (`id`, `username`, `fullname`, `email`, `password`) VALUES
-(1, 'am', 'AM', 'am@gmail.com', '12'),
-(2, 'dm', 'DM', 'dm@gmail.com', '123');
+INSERT INTO `users` (`username`, `fullname`, `email`, `password`) VALUES
+('am', 'AM', 'am@gmail.com', '12'),
+('dm', 'DM', 'dm@gmail.com', '123'),
+('cm', 'CM', 'cm@gmail.com', '123');
 
 -- Dommy Data categories
-INSERT INTO `categories` (`id`, `name`) VALUES
-(1, 'Development'),
-(2, 'E-Commerce');
+INSERT INTO `categories` (`name`) VALUES
+('Development'),
+('E-Commerce');
 
-INSERT INTO `subCategories` (`id`, `name`, `parent_id`) VALUES
-(1, 'c++', 1),
-(2, 'Javascript', 1),
-(3, 'E-bay', 2),
-(4, 'Amazon', 2);
+INSERT INTO `subCategories` (`name`, `parent_id`) VALUES
+('c++', 1),
+('Javascript', 1),
+('E-bay', 2),
+('Amazon', 2);
 
 
 -- Bommy Data post
 
-INSERT INTO `posts` (`id`, `cat_id`, `sub_cat_id`, `author_id`, `title`, `image`, `content`) VALUES
-(1, 1, 1, 1, 'C++ 1', 'image-3.jpg', 'C++  is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.\r\n\r\nIt was designed with a bias toward system programming and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights.[7] C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications,[7] including desktop applications, servers (e.g. e-commerce, Web search or SQL servers), and performance-critical applications (e.g. telephone switches or space probes).[8] C++ is a compiled language, with implementations of it available on many platforms. Many vendors provide C++ compilers, including the Free Software Foundation, Microsoft, Intel, and IBM.\r\n\r\nC++ is standardized by the International Organization for Standardization (ISO), with the latest standard version rati'),
-(2, 1, 2, 2, 'Javascript 1', 'image-4.png', 'JavaScript, often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a programming language that is characterized as dynamic, weakly typed, prototype-based and multi-paradigm');
+INSERT INTO `posts` (`cat_id`, `sub_cat_id`, `author_id`, `title`, `image`, `content`) VALUES
+(1, 1, 1, 'C++ 1', 'image-3.jpg', 'C++  is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.\r\n\r\nIt was designed with a bias toward system programming and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights.[7] C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications,[7] including desktop applications, servers (e.g. e-commerce, Web search or SQL servers), and performance-critical applications (e.g. telephone switches or space probes).[8] C++ is a compiled language, with implementations of it available on many platforms. Many vendors provide C++ compilers, including the Free Software Foundation, Microsoft, Intel, and IBM.\r\n\r\nC++ is standardized by the International Organization for Standardization (ISO), with the latest standard version rati'),
+(1, 2, 2, 'Javascript 1', 'image-4.png', 'JavaScript, often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a programming language that is characterized as dynamic, weakly typed, prototype-based and multi-paradigm');
