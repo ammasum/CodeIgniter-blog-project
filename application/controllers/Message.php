@@ -14,7 +14,16 @@ class Message extends CI_Controller{
     }
 
     public function to($id){
-        $data['page_body'] = "message_list";
-        $this->load->view('page/home/message');
+        if($_SERVER['REQUEST_METHOD'] === "GET"){
+            $data['page_body'] = "message_box";
+            $this->load->view('page/home/message', $data);
+        }else{
+            $this->form_validation->set_rules('usermsg', "User Message", "trim|required|min_length[1]");
+            if($this->form_validation->run()){
+                echo "Data success";
+            }else{
+                echo "Data invalid";
+            }
+        }
     }
 }

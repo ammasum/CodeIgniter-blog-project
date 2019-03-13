@@ -18,6 +18,14 @@
                 <li class="list-group-item"><a href="#">CM</a></li>
                 <li class="list-group-item"><a href="#">KM</a></li>
             </ul>
+        <?php }else if($page_body === "message_box"){ ?>
+            <?php echo form_open('message/to/' . "1"); ?>
+            <div class="form-group">
+                <label for="msgbox">Example textarea</label>
+                <textarea class="form-control" id="msgbox" rows="3" name="usermsg"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+            <?php echo form_close(); ?>
         <?php } ?>
     </div>
 </body>
