@@ -50,9 +50,11 @@ CREATE TABLE conversations(
 
 CREATE TABLE conversation_group(
   conversatioin_id INT UNSIGNED,
-  text_sender VARCHAR(30),
-  text_receiver VARCHAR(30),
-  FOREIGN KEY (conversatioin_id) REFERENCES conversations(id)
+  text_sender INT UNSIGNED,
+  text_receiver INT UNSIGNED,
+  FOREIGN KEY (conversatioin_id) REFERENCES conversations(id),
+  FOREIGN KEY (text_sender) REFERENCES users(id),
+  FOREIGN KEY (text_receiver) REFERENCES users(id)
 );
 
 CREATE TABLE conversation_content(

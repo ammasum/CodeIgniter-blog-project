@@ -12,16 +12,23 @@
 <body>
     <div class="container">
         <?php if($page_body === "message_list"){ ?>
+            <?php $result = $this->message_model->get_message_list($this->session->userdata('username')) ?>
             <h1>Messages</h1>
             <ul class="list-group">
-                <li class="list-group-item"><a href="#">MA</a></li>
-                <li class="list-group-item"><a href="#">CM</a></li>
-                <li class="list-group-item"><a href="#">KM</a></li>
+                <li class="list-group-item">
+                    <a href="#">MA</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">CM</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">KM</a>
+                </li>
             </ul>
         <?php }else if($page_body === "message_box"){ ?>
             <?php echo form_open('message/to/' . "1"); ?>
             <div class="form-group">
-                <label for="msgbox">Example textarea</label>
+                <label for="msgbox">Message</label>
                 <textarea class="form-control" id="msgbox" rows="3" name="usermsg"></textarea>
             </div>
             <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
