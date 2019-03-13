@@ -7,9 +7,24 @@
                 <img src="<?php echo base_url(); ?>uploads/image/c++.jpg" alt="">
             </div>
             <div class="profile-top-title-1010">
-                <p class="profile-top-title-name-1010"><?php echo $result->fullname; ?></p><br>
+                <p class="profile-top-title-name-1010"><?php echo $result->fullname; ?></p>
             </div>
         </div>
+        <?php if($this->session->userdata('islogin')){ ?>
+            <div class="profile-top-message-1010">
+                <?php if((int)$this->session->userdata('userid') === (int)$result->id){ ?>
+                    <a href="<?php echo base_url()?>index.php/message" class="btn btn-primary">
+                        Message
+                    </a>
+                <?php }else{ ?>
+                    <a
+                       href="<?php echo base_url()?>index.php/message/to/<?php echo $result->id; ?>"
+                       class="btn btn-primary">
+                        Message
+                    </a>
+                <?php } ?>
+            </div>
+        <? } ?>
     </div>
 </div>
 

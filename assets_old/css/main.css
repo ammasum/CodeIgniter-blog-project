@@ -257,6 +257,7 @@ body{
     font-size: 20px;
 }
 .profile-top-1010{
+    position: relative;
     margin-bottom: 10px;
 }
 .profile-top-content-1010{
@@ -278,6 +279,14 @@ body{
 }
 .profile-top-title-name-1010{
     display: block;
+}
+.profile-top-message-1010{
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    display : flex;
+    align-items : center;
+    margin-right: 10px;
 }
 /*end profile view*/
 
