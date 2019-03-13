@@ -18,8 +18,10 @@ class Post_model extends CI_Model{
     }
 
     public function get_all_by_author_id($author_id){
+        $this->db->select('posts.*, users.fullname AS author_name');
+        $this->db->join('users', 'posts.author_id = users.id');
         $this->db->where('author_id', $author_id);
-        $result = $this->db->get('posts');
+        $result = $this->db->get('posts', 5 , 0);
         return $result->result();
     }
 
