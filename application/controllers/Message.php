@@ -9,10 +9,12 @@ class Message extends CI_Controller{
     }
 
     public function index(){
-        echo "Hello";
+        $data['page_body'] = "message_list";
+        $this->load->view('page/home/message', $data);
     }
 
-    public function to(){
-        echo "Hello";
+    public function to($id){
+        $data['page_body'] = "message_list";
+        $this->load->view('page/home/message');
     }
 }
