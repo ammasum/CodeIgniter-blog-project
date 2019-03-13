@@ -32,7 +32,7 @@
                     <div class="message-show-area">
                         .
                     </div>
-                    <?php echo form_open('message/to/' . "1"); ?>
+                    <?php echo form_open('message/to/' . $msg_id); ?>
                     <div class="form-group">
                         <textarea class="form-control msg-input-box" rows="3" name="usermsg"></textarea>
                     </div>
