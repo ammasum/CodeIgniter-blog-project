@@ -11,7 +11,7 @@
                     <a class="nav-link" href="<?php echo base_url(); ?>index.php/post/create">Post</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="<?php echo base_url(); ?>index.php/user/profile/<?php echo $this->session->userdata('username'); ?>">Profile</a>
+                    <a class="nav-link" href="<?php echo base_url(); ?>index.php/user/profile/<?php echo $this->session->userdata('userid'); ?>">Profile</a>
                 </li>
             <?php }else{ ?>
                 <li class="nav-item active">

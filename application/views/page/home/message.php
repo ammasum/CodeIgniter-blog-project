@@ -7,33 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet"
           href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="<?php echo base_url(); ?>assets/css/message.css">
     <title>Message</title>
 </head>
 <body>
     <div class="container">
-        <?php if($page_body === "message_list"){ ?>
-            <?php $result = $this->message_model->get_message_list($this->session->userdata('username')) ?>
-            <h1>Messages</h1>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <a href="#">MA</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="#">CM</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="#">KM</a>
-                </li>
-            </ul>
-        <?php }else if($page_body === "message_box"){ ?>
-            <?php echo form_open('message/to/' . "1"); ?>
-            <div class="form-group">
-                <label for="msgbox">Message</label>
-                <textarea class="form-control" id="msgbox" rows="3" name="usermsg"></textarea>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <?php if($page_body === "message_list"){ ?>
+                    <?php $results = $this->message_model->get_message_list($this->session->userdata('userid')) ?>
+                    <h1>Messages</h1>
+                    <ul class="list-group">
+                        <?php foreach ($results AS $result){ ?>
+                            <li class="list-group-item">
+                                <a href="<?php echo base_url()?>index.php/message/to/<?php echo $result->text_receiver; ?>">
+                                    <?php echo $result->to_name; ?>
+                                </a>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                <?php }else if($page_body === "message_box"){ ?>
+                    <div class="message-show-area">
+                        .
+                    </div>
+                    <?php echo form_open('message/to/' . "1"); ?>
+                    <div class="form-group">
+                        <textarea class="form-control msg-input-box" rows="3" name="usermsg"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Send</button>
+                    <?php echo form_close(); ?>
+                <?php } ?>
             </div>
-            <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
-            <?php echo form_close(); ?>
-        <?php } ?>
+            <div class="col-md-2"></div>
+        </div>
     </div>
 </body>
 </html>
