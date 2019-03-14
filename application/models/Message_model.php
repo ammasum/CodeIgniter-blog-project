@@ -45,6 +45,7 @@ class Message_model extends CI_Model{
         $msgdata['sender'] = $this->session->userdata('userid');
         $msgdata['time'] = 'UNIX_TIMESTAMP()';
         $this->db->insert('conversation_content', $msgdata);
+        return $conversation_id;
     }
 
     public function get_message_content($ci){

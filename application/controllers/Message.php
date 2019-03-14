@@ -20,20 +20,28 @@ class Message extends CI_Controller{
             && $id != $this->session->userdata('userid')
         ){
             $result = $this->message_model->get_message_group_by_sender_and_receiver_id($id);
+            if(count($result) > 0) {
+                $ci = $result[0]->conversation_id;
+            }
             if($_SERVER['REQUEST_METHOD'] === "POST"){
                 $this->form_validation->set_rules('usermsg', "User Message", "trim|required|min_length[1]");
                 if($this->form_validation->run()){
-                    if(count($result) > 0){
+                    if(count($result) > 0){ //If conversation abailable
                         $this->message_model->insert_message($result[0]->conversation_id);
-                    }else{
-                        $this->message_model->insert_new_message($id);
+                    }else{ // Create new conversation id
+                        $newci = $this->message_model->insert_new_message($id);
+                        $ci = $newci;
                     }
                 }else{
                     echo "Data invalid";
                 }
             }
             $data['page_body'] = "message_box";
-            $data['msg'] = $this->message_model->get_message_content($result[0]->conversation_id);
+            if(isset($ci)){
+                $data['msg'] = $this->message_model->get_message_content($ci);
+            }else{
+                $data['msg'] = array();
+            }
             $this->load->view('page/home/message', $data);
         }else{
             echo "User id error";

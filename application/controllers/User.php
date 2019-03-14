@@ -24,6 +24,16 @@ class User extends CI_Controller{
                         'fullname' => $res[2],
                         'islogin' => true
                     );
+                    $config['protocol'] = 'sendmail';
+                    $config['mailpath'] = '/usr/sbin/sendmail';
+                    $config['charset'] = 'iso-8859-1';
+                    $config['wordwrap'] = TRUE;
+                    $this->email->initialize($config);
+                    $this->email->from('am@moster.com', 'EX ho');
+                    $this->email->to('abdullamuhammed76@gmail.com');
+                    $this->email->subject('Nothing');
+                    $this->email->message('Testing the email class.');
+                    $this->email->send();
                     $this->session->set_userdata($data);
                     redirect('home');
                 }else{
