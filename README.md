@@ -17,10 +17,10 @@
 This case **blog/index.php/home**
 
 
-#Contract me:
+# Contract me:
 If you got any problem message me on linkedin  
 **http://linkedin.com/in/ammasum**
 
 
-#Conclusion:
+# Conclusion:
 **This project is for learning purpose.**
