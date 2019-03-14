@@ -3,6 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+.break-hr{
+    height: 5px;
+    color: black;
+    box-shadow: 0 0 10px 1px black;
+}
+.message-show-area{
+    margin-top: 20px;
+}
 .common-message{
     width: max-content;
     color: white;

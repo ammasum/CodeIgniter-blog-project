@@ -14,8 +14,9 @@ class Message extends CI_Controller{
     }
 
     public function to($id){
+        $data['userdata'] = $this->user_model->get_user_by_id($id);
         if(
-            count($this->user_model->get_user_by_id($id)) === 1
+            count($data['userdata']) === 1
             && $id != $this->session->userdata('userid')
         ){
             $result = $this->message_model->get_message_group_by_sender_and_receiver_id($id);
@@ -32,7 +33,6 @@ class Message extends CI_Controller{
                 }
             }
             $data['page_body'] = "message_box";
-            $data['msg_id'] = $id;
             $data['msg'] = $this->message_model->get_message_content($result[0]->conversation_id);
             $this->load->view('page/home/message', $data);
         }else{

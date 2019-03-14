@@ -31,6 +31,8 @@
                 <?php }else if($page_body === "message_box"){ ?>
                     <div class="message-show-area">
                         <?php if(count($msg) >0){ ?>
+                            <h4><?php echo $userdata[0]->fullname; ?></h4>
+                            <hr class="break-hr">
                             <?php foreach ($msg as $msgrow){ ?>
                                 <?php if((int)$msgrow->sender === (int)$this->session->userdata('userid')){ ?>
                                     <div class="owner-parent">
@@ -48,7 +50,7 @@
                             <?php } ?>
                         <?php } ?>
                     </div>
-                    <?php echo form_open('message/to/' . $msg_id); ?>
+                    <?php echo form_open('message/to/' . $userdata[0]->id); ?>
                     <div class="form-group">
                         <textarea class="form-control msg-input-box" rows="3" name="usermsg"></textarea>
                     </div>
