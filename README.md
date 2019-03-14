@@ -10,8 +10,7 @@
 ## Requerments:
 ###### XAMPP SERVER
 
-##DATABASE:
-
+## DATABASE:
 **IMPORT database/blog.sql file to your PHPMYADMIN**  
 ## URL PATH
 **folderName/index.php/home**  
